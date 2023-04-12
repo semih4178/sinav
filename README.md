@@ -84,7 +84,7 @@ public IActionResult Index()
 Verileri işlemek için **Index.cshtml** sayfasının başına alttaki kodu ekleyelim:
 
 ```cshtml
-@model BektasKara9744.Models.ViewModel
+@model deneme.Models.ViewModel
 ```
 
 ```cshtml
