@@ -16,7 +16,7 @@ Bu işlemde herkes için farklı olabilir. Eğer bağlama işlemini yapabiliyors
 
  1. Projenize **Microsoft.EntityFrameworkCore.Design , Microsoft. EntityFrameworkCore.Sq|Server , Microsoft. EntityFrameworkCore.Tools** nuget ile yükleyin. Paket yöneticisini açmak için üstütte bulunan **araçlar** ı seçin ve nuget bölümünden 2. seçeneği seçin.
  2. Bu kez **araçlar** nuget bölümünden **paket yöneticisi konsolu** nu seçin 3. olan.
- 3. Açılan konsola (**DİKKAT** **Server** ve **Database** parametrelerini kendinize göre düzenleyin eğer Tamer hoca da iseniz sadece database parametresine kendi database adınızı yazmanız yeterli): ``` Scaffold-DbContext "Server=LAB7SERVER;Database=Databaseadı;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models ``` yazınız.
+ 3. Açılan konsola (**DİKKAT** **Server** ve **Database** parametrelerini kendinize göre düzenleyin eğer Tamer hoca da iseniz sadece database parametresine kendi database adınızı yazmanız yeterli): ``` Scaffold-DbContext "Server=LAB7SERVER; Database=arabalar; Trusted_Connection=True; TrustServerCertificate=True" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -force ``` yazınız.
  4. Biraz bekledikten sonra **Build succeeded.** ifadesini konsola yazıldığını göreceksiniz.
  5. Artık database kullanmaya hazır.
  
