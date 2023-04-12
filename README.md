@@ -48,6 +48,7 @@ public IActionResult Index()
  ```
 bunu dosyamızın en ütüne ekleyelim. burada ki **deneme** yazısını kendi proje adınıza göre değiştirelim.
 Tekrar eden yeri bularak verilerimizi yazdıralım. Örnek olarak:
+
 ```cshtml
 @foreach (var item in Model)
 {
@@ -81,10 +82,12 @@ public IActionResult Index()
 }
 ```
 Verileri işlemek için **Index.cshtml** sayfasının başına alttaki kodu ekleyelim:
-```
+
+```cshtml
 @model BektasKara9744.Models.ViewModel
 ```
-```
+
+```cshtml
 @foreach (var item in Model.Yemek)
 {
     <div>@item.YemekAdi</div>
