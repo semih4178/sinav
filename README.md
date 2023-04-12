@@ -43,7 +43,7 @@ public IActionResult Index()
  Burada **db** üzerinden **yemekler** değişkeni tüm yemekleri çekiyoruz. Ve View'e gönderiyoruz.
 
  **Views/Home** klasörü içindeki **Index.cshtml** dosyası:
- ```
+ ```cshtml
  @model List<deneme.Models.Yemeklers>
  ```
 bunu dosyamızın en ütüne ekleyelim. burada ki **deneme** yazısını kendi proje adınıza göre değiştirelim.
